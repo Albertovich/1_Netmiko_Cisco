@@ -1,7 +1,7 @@
 from netmiko import ConnectHandler
 
 print("********Antes de lanzar los comandos de configuración:*********")
-device = ConnectHandler(device_type='cisco_ios', ip='192.168.0.33',
+device = ConnectHandler(device_type='cisco_ios', ip='192.168.0.202',
                         username='cisco', password='cisco')
 output = device.send_command("show running-config interface GigabitEthernet 0/0")
 print(output)
